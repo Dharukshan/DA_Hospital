@@ -1,0 +1,42 @@
+{
+  "name": "DA Hospital Website",
+  "short_name": "DA Hospital",
+  "description": "A comprehensive website for DA Hospital, providing information about services, branches, doctors, and more.",
+  "start_url": "/index.html",
+  "display": "standalone",
+  "background_color": "#FFFFFF",
+  "theme_color": "#1C9685",
+  "icons": [
+    {
+      "src": "/images/icon-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/images/icon-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "files": {
+    "html": {
+      "index.html": "Main homepage of the DA Hospital site.",
+      "about.html": "Page providing information about DA Hospital.",
+      "services.html": "Page detailing services offered by DA Hospital.",
+      "doctors.html": "Information about doctors and their specializations.",
+      "contact.html": "Page with contact details and a map.",
+      "pharmacy.html": "Details about the hospital pharmacy services.",
+      "branches.html": "Information about various hospital branches."
+    },
+    "css": {
+      "styles.css": "Main stylesheet for the DA Hospital website.",
+      "responsive.css": "Stylesheet to ensure the site is responsive on all devices."
+    },
+    "images": {
+      "logo.png": "Hospital logo used in the header.",
+      "banner.jpg": "Main banner image used on the homepage.",
+      "doctor1.jpg": "Image of Doctor 1 for the doctors section.",
+      "doctor2.jpg": "Image of Doctor 2 for the doctors section."
+    }
+  }
+}

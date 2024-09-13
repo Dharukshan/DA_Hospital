@@ -1,0 +1,207 @@
+<html>
+<head> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title> DA Hospital </title>
+<link rel="stylesheet" type="text/css" href="Style/Style.css">
+<link rel="stylesheet" href="manifest.json">
+<link rel="icon" href="Images/favicon.ico" type="image/x-icon">
+</head>
+<body>
+<section class="Sub-header">
+
+<!-----Navigation bar begins----->  
+
+<header>
+  <nav>
+    <a href="index.html"><img src="Images/l3.png" class="Logo"></a>
+    <div class="nav-links">
+      <ul>
+        <li><a href="Pharmacy.html"> Pharmacy </a></li>
+        <li><a href="Consulting reservation.html"> Consulting reservation</a></li>
+        <li><a href="Doctors.html"> Doctors </a> </li>
+        <li><a href="Services.html"> Services </a> </li>
+        <li><a href="About us and contact.html"> About Us </a></li>
+        <li><a href="index.html"> Home </a> </li>
+      </ul>
+    </div>  
+  </nav>
+  <h1>Pharmacy</h1>
+</header>  
+</section>
+
+<!-----Navigation bar ends----->
+
+<!-----Pharmacy overview----->
+
+<main>
+  <section class="pharmacy">
+    <h2>Innovations in Pharmacy</h2>
+    <p>The DA Hospital Pharmacy is a vital component of our healthcare services, offering patients easy access to a comprehensive range of medications. Staffed by experienced pharmacists, the pharmacy ensures that all prescriptions are accurately filled and tailored to each patient's specific needs. Our pharmacists are available to provide expert advice on medication management, potential side effects, and drug interactions, empowering patients with the knowledge to manage their treatment plans effectively.</p>
+    
+    <div class="row">
+      <div class="pharmacy-left">
+        <img src="Images/Pharamcy" alt="Pharmacy">
+      </div>
+
+<!-----Pharmacy Table----->
+
+      <div class="pharmacy-right">
+        <section class="pharmacy-table">
+          <table class="about-table">
+            <thead>
+                <tr>
+                    <th>Service</th>
+                    <th>Operating Hours	</th>
+                    <th>Description	</th>
+                </tr>
+                <tbody>
+                  <tr>
+                      <td>Prescription Services</td>
+                      <td>Monday - Sunday: 8:00 AM - 10:00 PM</td>
+                      <td>Dispensing of prescribed medications.</td>
+                  </tr>
+                  <tr>
+                    <td>Over-the-Counter Medications</td>
+                    <td>Monday - Sunday: 8:00 AM - 10:00 PM</td>
+                    <td>Available for common ailments without prescription.</td>
+                  </tr>
+                  <tr>
+                    <td>Specialty Medications</td>
+                    <td>Monday - Friday: 9:00 AM - 5:00 PM</td>
+                    <td>Access to medications for complex conditions.</td>
+                  </tr>
+                </tbody>
+            </thead> 
+          </table>
+        </section>  
+      </div>
+    </div>
+  </section>
+
+  
+<!-----Pharmacy Form----->
+
+  <section class="Pharmacy">
+    <section class="pharmacy-form">
+      <h3>Order Your Medicine</h3>
+      <p>Please fill out the form below to order your medications or inquire about our pharmacy services. Whether it's a prescription refill, over-the-counter meds, or a question about your medication, our pharmacy team is ready to assist you.</p>      
+      <form action="Thankyou.html">
+          <div class="form-group">
+              <label for="patient-name">Full Name</label>
+              <input type="text" id="patient-name" name="patient_name" placeholder="Enter your full name" required>
+          </div>
+  
+          <div class="form-group">
+              <label for="patient-phone">Phone Number</label>
+              <input type="tel" id="patient-phone" name="patient_phone" placeholder="Enter your phone number" required>
+          </div>
+  
+          <div class="form-group">
+            <label for="prescription">Upload Prescription:</label>
+            <input type="file" id="prescription" name="prescription" accept=".jpg, .jpeg, .png, .pdf" required>
+          </div>
+          
+          <div class="form-group">
+            <label for="doctors-name">Doctor's Name (optional)</label>
+            <input type="text" id="doctors-name" name="doctors_name" placeholder="Consulted doctor’s name">
+          </div>
+
+          <div class="form-group">
+              <label for="medicine">Medicine</label>
+              <select id="medicine" name="medicine" required>
+                  <option value="" disabled selected>Select your required medicine</option>
+                  <option value="Paracetamol (Panadol, Tylenol)">Paracetamol (Panadol, Tylenol)</option>
+                  <option value="Atorvastatin (Lipitor)">Atorvastatin (Lipitor)</option>
+                  <option value="Amoxicillin (Amoxil)">Amoxicillin (Amoxil)</option>
+                  <option value="Metformin (Glucophage)">Metformin (Glucophage)</option>
+                  <option value="Omeprazole (Prilosec)">Omeprazole (Prilosec)</option>
+                  <option value="Lisinopril (Zestril)">Lisinopril (Zestril)</option>
+                  <option value="Ibuprofen (Advil, Motrin)">Ibuprofen (Advil, Motrin)</option>
+                  <option value="Insulin (Humalog, Lantus)">Insulin (Humalog, Lantus)</option>
+                  <option value="Cetirizine (Zyrtec)">Cetirizine (Zyrtec)</option>
+                  <option value="Losartan (Cozaar)">Losartan (Cozaar)</option>
+              </select>          
+          </div>
+  
+          <div class="form-group">
+              <label for="quantity">Quantity</label>
+              <input type="number" id="quantity" name="quantity" placeholder="Select the quantity of medicine you need" required>
+          </div>
+  
+          <div class="form-group">
+              <label for="payment-method">Payment Method</label>
+              <select id="payment-method" name="payment_method" required>
+                  <option value="" disabled selected>Select a payment method</option>
+                  <option value="bank-transfer">Bank Transfer</option>
+                  <option value="mobile-payments">Mobile Payments</option>
+                  <option value="cash-on-delivery">Cash on Delivery</option>
+              </select>
+          </div>
+
+          <div class="form-group">
+            <label for="delivery-speed">Delivery Speed</label>
+            <select id="delivery-speed" name="delivery_speed" required>
+                  <option value="" disabled selected>Select your preferred delivery speed</option>
+                  <option value="bank-transfer">Standard</option>
+                  <option value="mobile-payments">Express</option>
+            </select>
+        </div>
+  
+          <div class="form-group">
+              <label for="notes">Delivery Address</label>
+              <textarea id="delivery-address" name="delivery_address" placeholder="Provide your delivery address" rows="4" required></textarea>
+          </div>
+
+          <div class="form-group">
+            <label>
+              <p>I agree to the terms and conditions. <input type="checkbox" name="terms" required></p>
+            </label>
+          </div>
+
+          <div class="form-group">
+              <button type="submit" class="submit-btn">Place Order</button>
+          </div>
+      </form>
+    </section>
+  </section>
+
+<!-----Pharmacy Banner----->
+
+  <section class="banner-container">
+    <div class="banner">
+        <div class="doctor">
+            <img src="Images/Doctor.png" alt="Doctor">
+        </div>
+        <div class="notes">
+            <span class="discount">Save up to</span>
+            <span class="discount-amount">50% Off</span>
+            <span class="offer-details">Offer Ends in 5 Days</span>
+        </div>
+        <div class="notice">
+            <p>Take advantage of our limited-time offer with up to <strong>50% off</strong> on select medical services. This exclusive deal includes discounts on consultations, diagnostic tests, and wellness packages.</p>
+            <p>Hurry, this offer ends in just 5 days! Book your appointment today and experience the exceptional care that DA Hospital is known for.</p>
+        </div>
+    </div>
+  </section>
+
+</main>
+
+<!-----Footer----->
+
+<footer>
+  <section class="footer">  
+    <h4>About us</h4>
+    <p>Committed to providing compassionate, comprehensive care with cutting-edge medical expertise.<br>Your health and well-being are our priority.</p>
+
+    <div class="icons">
+      <img src="Images/Instagram.png" alt="Instagram">
+      <img src="Images/Facebook.png" alt="Facebook">
+      <img src="Images/Twitter.png" alt="Twitter">
+    </div>
+
+    <p>Address:123 Wellness Avenue, Kandy.</p>
+    <p>Copyright © 2024 DA Hospital. All rights reserved.</p>
+  </section>
+</footer>
+</body>
+</html>
